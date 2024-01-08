@@ -2,21 +2,21 @@ package com.example.proiectcolectiv731_be.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Data
 @Entity
-@Getter
-@Setter
-@Table(name = "image")
+@Table(name = "images")
 public class Photo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long imageId;
 
-    @Column(name = "url", nullable = false)
+    @Column(name = "url")
     private String url;
+
+    @Lob
+    @Column(columnDefinition = "LONGBLOB")
+    private byte[] data;
 
     @ManyToOne
     @JoinColumn(name = "advert_id")

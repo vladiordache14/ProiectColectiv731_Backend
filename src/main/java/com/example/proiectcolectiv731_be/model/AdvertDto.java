@@ -1,7 +1,5 @@
 package com.example.proiectcolectiv731_be.model;
 
-import com.example.proiectcolectiv731_be.model.Photo;
-import com.example.proiectcolectiv731_be.model.User;
 import jakarta.persistence.Id;
 import lombok.*;
 
@@ -9,8 +7,6 @@ import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 @Data
 public class AdvertDto {
 

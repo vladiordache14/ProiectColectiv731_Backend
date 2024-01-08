@@ -10,13 +10,9 @@ import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.Set;
 
-import java.util.List;
-
 
 @Data
 @Entity
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="users")
@@ -78,6 +74,7 @@ public class User {
     @OneToMany(mappedBy = "seller", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Advert> advertSet;
 
+    @Column(name = "tries")
     private int numberOfTries;
 
     public void setPassword(String newPass){

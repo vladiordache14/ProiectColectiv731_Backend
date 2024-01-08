@@ -9,11 +9,9 @@ import java.util.List;
 
 @Data
 @Entity
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="advert")
+@Table(name="adverts")
 public class Advert {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

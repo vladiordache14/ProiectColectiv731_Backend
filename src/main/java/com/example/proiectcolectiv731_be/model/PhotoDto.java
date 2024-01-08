@@ -8,4 +8,5 @@ public class PhotoDto {
     @Id
     private Long imageId;
     private String photoUrl;
+    private byte[] data;
 }

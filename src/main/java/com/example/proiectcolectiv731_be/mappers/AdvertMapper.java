@@ -24,6 +24,7 @@ public class AdvertMapper {
             PhotoDto photoDto = new PhotoDto();
             photoDto.setImageId(photo.getImageId());
             photoDto.setPhotoUrl(photo.getUrl());
+            photoDto.setData(photo.getData());
             photoDtos.add(photoDto);
         }
         advertDto.setPhotos(photoDtos);
